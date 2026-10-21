@@ -1056,8 +1056,8 @@ void Main() {
 
 			// 状況 5: 中道改革連合
 			if (situation % 100 == 5) {
-				font18b(U"AI 連合が結成！").draw(18, 570, 70, col_w);
-				font18(U"政党「AI 新党」と「GPT」が合体し、「AI 連合」と").draw(18, 570, 105, col_w);
+				font18b(U"中道改革連合が結成！").draw(18, 570, 70, col_w);
+				font18(U"政党「立憲民主党」と「公明党」が合体し、「中道改革連合」と").draw(18, 570, 105, col_w);
 				font18(U"いう政党が出来ました。突然の大事件です！").draw(18, 570, 130, col_w);
 				Rect(790, 320, 180, 45).draw(Middle(col_h, col_y, button[90]));
 				font25(U"OK").draw(25, 866, 324, col_m);
@@ -1292,7 +1292,7 @@ void Main() {
 			font16b(U"優勢").draw(16, 93, 113, col_m);
 			font16b(U"優勢").draw(16, 148, 113, col_m);
 			font16b(U"確定").draw(16, 203, 113, col_m);
-			font14(U"※数字はあなたの獲得議席数").draw(14, 30, 143, col_w);
+			font14(U"※数字は自民党の獲得議席数").draw(14, 30, 143, col_w);
 
 			// 既に決定した小選挙区
 			int progress = min(47, (int)(timestamp / 0.8));
@@ -1425,8 +1425,8 @@ void Main() {
 			// 開票が終わった場合
 			if (timestamp >= 0.8 * 47 + 1.5) {
 				Rect(0, 0, 1000, 600).draw(Color(col_m.r, col_m.g, col_m.b, 230.0));
-				if (actual_votes[0] > actual_votes[1]) font80(U"勝利！").draw(80, 380, 150, col_w);
-				else font80(U"敗北…").draw(80, 380, 150, col_w);
+				if (actual_votes[0] > actual_votes[1]) font80(U"勝利！政権維持").draw(80, 380, 150, col_w);
+				else font80(U"敗北…政権交代へ").draw(80, 380, 150, col_w);
 				Rect(400, 360, 200, 60).draw(Middle(col_h, col_y, button[130]));
 				font30(U"結果画面へ").draw(30, 425, 368, col_m);
 				int Target = -1;
@@ -1463,7 +1463,7 @@ void Main() {
 				else font60b(num).draw(60, 804 + i * 33, 430, col_b);
 			}
 			font30b(U"議席").draw(30, 910, 466, col_b);
-			font25b(U"あなた").draw(25, 30, 409, col_r);
+			font25b(U"自民党").draw(25, 30, 409, col_r);
 			font25b(ai_tomei).draw(25, 895, 409, col_b);
 			Line(500, 500, 500, 570).draw(LineStyle::SquareDot, 3, col_w);
 			Rect(420, 455, 160, 45).draw(col_w);
