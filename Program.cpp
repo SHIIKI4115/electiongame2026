@@ -696,7 +696,7 @@ void Main() {
 		else if (situation == 200 || situation == 201) {
 			font60(U"はじめに").draw(60, 380, 60);
 			font23(U"ゲーム「選挙で勝とう」へようこそ。").draw(23, 75, 160);
-			font23(U"あなたは、2026 年衆議院選挙の自民党の党首であり、単独過半数獲得を狙っていま").draw(23, 75, 210);
+			font23(U"じゅらえもんは、2026 年衆議院選挙の自民党の党首であり、単独過半数獲得を狙っていま").draw(23, 75, 210);
 			font23(U"す。選挙の必勝ツールである三バン (地盤・カバン・看板) をかき集め、SNS の力も").draw(23, 75, 245);
 			font23(U"活用して有利に選挙戦を進めていきましょう。").draw(23, 75, 280);
 			font23(U"なお、本ゲームは実際の選挙とは一切関係ありません。当たり前ですが、実際の選").draw(23, 75, 330);
@@ -816,7 +816,7 @@ void Main() {
 				Triangle(261, 480, 279, 480, 270, 495).draw(col_w);
 				font25b(U"議席予測").draw(25, 40, 448, col_m);
 				font16(U"※内側は比例代表").draw(16, 382, 470, col_w);
-				font16b(U"あなた").draw(16, 35, 501, col_m);
+				font16b(U"自民党").draw(16, 35, 501, col_m);
 				font16b(ai_tomei).draw(16, 457, 501, col_m);
 				font35b((int)(expect_total + 0.5)).draw(35, 35, 520, col_m);
 				font35b(465 - (int)(expect_total + 0.5)).draw(35, 505 - 21 * (int)(to_string(465 - (int)(expect_total + 0.5)).size()), 520, col_m);
@@ -841,7 +841,7 @@ void Main() {
 				Triangle(261, 480, 279, 480, 270, 495).draw(col_w);
 				font25b(U"議席予測").draw(25, 40, 448, col_m);
 				font16(U"※内側は比例代表").draw(16, 382, 470, col_w);
-				font16b(U"あなた").draw(16, 35, 501, col_m);
+				font16b(U"自民党").draw(16, 35, 501, col_m);
 				font16b(ai_tomei).draw(16, 417, 501, col_m);
 				font16b(U"GPT").draw(16, 475, 501, col_m);
 				font35b((int)(expect_total * (425.0 / 465.0) + 0.5)).draw(35, 35, 520, col_m);
@@ -866,7 +866,7 @@ void Main() {
 					Rect(lx + 2.0, ly + 2.0, (rx - lx) - 4.0, (ry - ly) - 4.0).draw(Middle(col_m, col_w, keisuu));
 				}
 			}
-			font16(U"あなた").draw(16, 602.5 - 24.0, 508, col_w);
+			font16(U"自民党").draw(16, 602.5 - 24.0, 508, col_w);
 			font16(ai_tomei).draw(16, 602.5 - 24.0, 541, col_w);
 			font16(U"演説力").draw(16, 669.5 - 24.0, 475, col_w);
 			font16(U"資金").draw(16, 736.5 - 16.0, 475, col_w);
@@ -937,7 +937,7 @@ void Main() {
 				font18(U"深夜に SNS を通じた活動が行われます").draw(18, 570, 70, col_w);
 				if (usr[0].lv_sns > usr[1].lv_sns + 2) {
 					font18(U"(影響力の高い").draw(18, 570, 95, col_w);
-					font18(U"あなたの形勢").draw(18, 683, 95, col_r);
+					font18(U"自民党の形勢").draw(18, 683, 95, col_r);
 					font18(U"が都市で僅かに上昇)").draw(18, 791, 95, col_w);
 				}
 				else if (usr[0].lv_sns + 2 < usr[1].lv_sns) {
@@ -1416,7 +1416,7 @@ void Main() {
 				else font60b(num).draw(60, 804 + i * 33, 430, col_b);
 			}
 			font30b(U"議席").draw(30, 910, 466, col_b);
-			font25b(U"あなた").draw(25, 30, 409, col_r);
+			font25b(U"自民党").draw(25, 30, 409, col_r);
 			font25b(ai_tomei).draw(25, 895, 409, col_b);
 			Line(500, 500, 500, 570).draw(LineStyle::SquareDot, 3, col_w);
 			Rect(420, 455, 160, 45).draw(col_w);
