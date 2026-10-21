@@ -246,8 +246,8 @@ void Initialize(int difficulty) {
 	else {
 		chukaku_turn = -1;
 	}
-	ai_tomei = U"AI新党";
-	ai_tomei2 = U"新党";
+	ai_tomei = U"立憲民主党";
+	ai_tomei2 = U"公明党";
 
 	// カード等の設定
 	while (true) {
@@ -394,7 +394,7 @@ void Apply_Cards(int card_id) {
 	}
 }
 
-// AI 新党 + GPT = AI 連合
+// 立憲民主党 + 公明党 = 中道改革連合
 void Apply_Chukaku(double mokuhyou_giseki) {
 	double l = -1.0, r = 1.0;
 	for (int i = 0; i < 20; i++) {
@@ -415,8 +415,8 @@ void Apply_Chukaku(double mokuhyou_giseki) {
 	for (int i = 0; i < 47; i++) approval_rate[i] = max(0.0001, min(0.9999, approval_rate[i] + l));
 	chukaku_applied = true;
 	usr[1].koenkai += 170;
-	ai_tomei = U"AI連合";
-	ai_tomei2 = U"連合";
+	ai_tomei = U"中道改革連合";
+	ai_tomei2 = U"中道改革連合";
 }
 
 // あなたの予測議席数を計算
@@ -696,7 +696,7 @@ void Main() {
 		else if (situation == 200 || situation == 201) {
 			font60(U"はじめに").draw(60, 380, 60);
 			font23(U"ゲーム「選挙で勝とう」へようこそ。").draw(23, 75, 160);
-			font23(U"あなたは、20XX 年衆議院選挙のある党の党首であり、単独過半数獲得を狙っていま").draw(23, 75, 210);
+			font23(U"あなたは、2026 年衆議院選挙の自民党の党首であり、単独過半数獲得を狙っていま").draw(23, 75, 210);
 			font23(U"す。選挙の必勝ツールである三バン (地盤・カバン・看板) をかき集め、SNS の力も").draw(23, 75, 245);
 			font23(U"活用して有利に選挙戦を進めていきましょう。").draw(23, 75, 280);
 			font23(U"なお、本ゲームは実際の選挙とは一切関係ありません。当たり前ですが、実際の選").draw(23, 75, 330);
